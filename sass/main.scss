@@ -1,0 +1,30 @@
+@import "./utils/variables";
+@import "./utils/normalize";
+@import "./components/logo";
+@import "./components/page-header";
+@import "./components/header";
+@import "./components/container";
+body {
+    font-family: 'Roboto', sans-serif;
+    background: $color-white;
+    color: $primary-text-color;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+margin: 0;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.section{
+    padding: 94px 0;
+}
