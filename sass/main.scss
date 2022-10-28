@@ -1,30 +1,21 @@
 @import "./utils/variables";
-@import "./utils/normalize";
-@import "./components/logo";
-@import "./components/page-header";
-@import "./components/header";
+@import "./base/reset";
+@import "./utils/placeholders";
+@import "./utils/maxin";
+@import "./components/common";
+@import "./layuots/header";
 @import "./components/container";
-body {
-    font-family: 'Roboto', sans-serif;
-    background: $color-white;
-    color: $primary-text-color;
-}
+@import "./base/visually-hidden";
+@import "./components/hat";
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-{
-margin: 0;
-}
-ul {
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-}
-.section{
-    padding: 94px 0;
-}
+@import "./layuots/property";
+@import "./layuots/team";
+@import "./layuots/work";
+@import "./layuots/klients";
+@import "./components/button";
+@import "./layuots/photo";
+@import "./layuots/footer";
+
+
+
+@import "./components/modal";

@@ -1,0 +1,96 @@
+/* ---------команда--------------- */
+
+.team{
+    background: #F5F4FA;
+}
+ .team-title{
+   @include font(700, 36px, 1.16, 0.03em);
+   //  font-weight: 700;
+   //  font-size: 36px;
+   //  line-height: 1.16;
+   //  letter-spacing: 0.03em;
+    text-align: center; 
+    
+    color:var(--primary-text-color);
+    margin-bottom: 50px;
+ }
+ .team-list{
+    display: flex;
+    
+ }
+ .team-item{
+width: 270px;
+left: 815px;
+top: 1632px;
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
+&:not(:last-child){
+    margin-right: 30px;
+ }
+ }
+ 
+  .team-item-title{
+   //  font-weight: 500;
+   //  font-size: 16px;
+   //  line-height: 1.18;
+   //  letter-spacing: 0.03em;
+   @include font(500, 16px, 1.18, 0.03em);
+    text-align: center;
+    
+    color: var(--primary-text-color);
+    
+  }
+  .team-item-text{
+   @include font(400, 16px, 1.18, 0.03em);
+   //  font-size: 16px;
+   //  line-height: 1.18;
+   //  letter-spacing: 0.03em;
+    text-align: center;
+    
+    color: var(--titl-text-color);
+    padding-top: 10px; 
+  }
+ .team-dop{
+    padding: 30px 0;
+    text-align: center;
+ }
+
+
+
+/* Наша команда -- соц сети  */
+    
+.team-cot-link{
+   color:  #AFB1B8;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   background:var(--color-white);
+ 
+   transition: color 250ms linear,background 250ms linear;
+
+   &:hover, &:focus{
+      background-color: var(--accent-color);
+      color: var(--color-white);
+    }
+}
+
+.team-cot-icon{
+   fill: currentColor;
+  &:not(:last-child){
+   margin-right: 10px;
+}
+}
+.team-cot-list{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 16px;
+ 
+
+}
+
