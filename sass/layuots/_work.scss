@@ -1,34 +1,28 @@
 /* -------------------наши роботі--------------- */
-.work-title{
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.16;
-    // letter-spacing: 0.03em;
+
+.work
+{ padding-bottom: 94px;}
+.work__title{
+  
     text-align: center; 
     @include font(700, 36px, 1.16, 0.03em);
-
     color:var(--primary-text-color);
     margin-bottom: 50px;
     }
-.work
-{ padding-bottom: 94px;}
-    .work-list{
+
+    .work__list{
         display: flex;
     }
-    .work-item:not(:last-child){
+    .work__item:not(:last-child){
         margin-right: 32px;
     }
-.work-link{
+.work__link{
     position: relative; 
     display: block;
     line-height: 0;
 }
-.work-text{
-  position: absolute;  
-//  font-weight: 700;
-// font-size: 14px;
-// line-height: 1.14;
-// letter-spacing: 0.03em;
+.work__text{
+position: absolute;  
 text-align: center;
 @include font(700, 14px, 1.14, 0.03em);
 text-transform: uppercase;  

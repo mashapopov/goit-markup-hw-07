@@ -1,20 +1,15 @@
-.property-list{
+.property__list{
     display: flex;
-    
 }
-.property-item{
+.property__item{
     width: 270px;
 &:not(:last-child){
     margin-right: 30px;
 }       
 }
-
- 
-
- .icon-link{
+ .property__icon{
     color: var(--primary-text-color);
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     justify-content: center;
     background:var(--background-color);
     width: 270px;
@@ -22,26 +17,17 @@
     border:none;
     border-radius: 4px;
     margin-bottom: 30px;
-
 }
-.icon-sot{
+.property__icons{
     fill: currentColor;
 }
-.property-titles{
+.property__title{
     @include font(700, 14px, 1.14, 0.03em);
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.14;
-    // letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
     margin-bottom: 10px;
-
 }
-.property-text{
-    // font-size: 14px;
-    // line-height: 1.71;
-    // letter-spacing: 0.03em;
+.property__text{
     @include font(400, 14px, 1.71, 0.03em);
     color: var(--titl-text-color);
 }
